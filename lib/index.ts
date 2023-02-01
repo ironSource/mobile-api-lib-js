@@ -23,6 +23,7 @@ export class IronSource {
             this.monetizeAPI = new IronSourceMonetizeAPI.API();
         }
         if (this._username && this._secret && this._token) {
+            console.log("test access");
             this.monetizeAPI.setCredentials(this._username, this._secret, this._token);
 
         }
